@@ -1,4 +1,3 @@
-"""
 File management endpoints for AI Recruit.
 """
 
@@ -22,3 +21,10 @@ async def get_file(file_id: str):
     """Get a file by ID."""
     logger.info(f"Get file {file_id} endpoint called")
     return {"message": f"Get file {file_id} - not implemented yet"}
+
+
+@router.delete("/{file_id}")
+async def delete_file(file_id: str):
+    """Delete a file by ID."""
+    logger.info(f"Delete file {file_id} endpoint called")
+    return {"message": f"Delete file {file_id} - not implemented yet"}
